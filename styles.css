@@ -40,6 +40,17 @@ header .logo img {
     margin-right: 10px;
 }
 
+/* Botón de menú responsive */
+#menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2em;
+    color: #ff69b4;
+    cursor: pointer;
+    margin-right: 1em;
+}
+
 nav ul {
     list-style: none;
     display: flex;
@@ -63,6 +74,7 @@ main {
     background-color: var(--main-bg-color);
     border-radius: 10px;
     margin: 8em 2em 2em 2em;
+    padding-bottom: 5em; /* Para que el footer no tape el contenido */
 }
 
 section {
@@ -118,9 +130,20 @@ footer {
         background-color: rgba(255, 182, 193, 1);
     }
 
+    /* Mostrar el botón de menú en móviles */
+    #menu-toggle {
+        display: block;
+    }
+
     nav ul {
         flex-direction: column;
         display: none;
+        background-color: rgba(255, 182, 193, 0.98);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
 
     nav ul.active {
@@ -134,6 +157,7 @@ footer {
     main {
         padding: 1em;
         margin: 10em 1em 1em 1em;
+        padding-bottom: 6em; /* Más espacio para el footer en móviles */
     }
 
     #calendar {
