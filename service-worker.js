@@ -2,12 +2,17 @@ self.addEventListener('install', (event) => {
     event.waitUntil(
         caches.open('v1').then((cache) => {
             return cache.addAll([
-                '/',
+                '/', // Alias for index.html
                 '/index.html',
+                '/agendamiento.html',
+                '/productos.html',
                 '/styles.css',
-                '/scripts.js',
-                '/DEV/LACTANIDO/Images/logo.jpg',
-                '/Images/background.jpg'
+                '/main.js',
+                '/scripts/agendamiento.js',
+                '/Images/logo.jpg',
+                '/Images/logo_trans.png',
+                '/Images/background.jpg',
+                '/manifest.json'
             ]);
         })
     );

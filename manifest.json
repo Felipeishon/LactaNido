@@ -7,12 +7,12 @@
     "theme_color": "#ffb6c1",
     "icons": [
         {
-            "src": "/DEV/LACTANIDO/Images/logo.jpg",
+            "src": "Images/logo.jpg",
             "sizes": "192x192",
             "type": "image/jpg"
         },
         {
-            "src": "/DEV/LACTANIDO/Images/logo.jpg",
+            "src": "Images/logo.jpg",
             "sizes": "512x512",
             "type": "image/jpg"
         }
